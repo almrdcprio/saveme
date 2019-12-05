@@ -1,51 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@drawable/saveme"
-    tools:ignore="MissingDefaultResource">
-
-    <TextView
-        android:id="@+id/textView_RumahSakit"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:text="Layanan Rumah Sakit"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:gravity="center"
+        android:text="Rumah Sakit terdekat dari lokasi anda"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="40dp">
+        </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:orientation="horizontal" android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:background="@color/cyan_500"
-        android:orientation="horizontal"
-        android:layout_marginBottom="50dp">
-
-
+        >
         <ImageView
             android:layout_width="126dp"
             android:layout_height="150dp"
-            android:background="#FFFFFF"
             android:scaleType="fitXY"
-
             android:src="@drawable/mmc"
-            app:srcCompat="@drawable/mmc" />
+
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFFFF"
             android:orientation="vertical">
 
 
@@ -61,168 +46,131 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4,4 " />
-
+                    android:text="4,4 "
+                    />
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/stars"
-                    app:srcCompat="@drawable/stars" />
+                    android:src="@drawable/stars"></androidx.appcompat.widget.AppCompatImageView>
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Address : No.Kav C 20-21, Jl. H. R. Rasuna Said, RT.1/RW.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940" />
-
-            <Button
-                android:id="@+id/buttonMMC"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="See More"
-                android:backgroundTint="@color/light_blue_500"/>
         </LinearLayout>
 
     </LinearLayout>
-
-    <LinearLayout
-    android:id="@+id/rumahsakit4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="376dp"
-    android:background="@color/cyan_500"
-    android:orientation="horizontal"
-    app:layout_constraintTop_toTopOf="parent"
-    tools:layout_editor_absoluteX="0dp"
-        tools:ignore="DuplicateIds,MissingConstraints">
-
-        <ImageView
-            android:layout_width="126dp"
-            android:layout_height="150dp"
-            android:background="#FFFFFF"
-            android:scaleType="fitXY"
-
-            android:src="@drawable/logo"
-            app:srcCompat="@drawable/rspi" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        android:orientation="vertical">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rumah Sakit Pondok Indah (RSPI)"
-            android:textStyle="bold"
-
-            />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4,1 " />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/stars"
-                app:srcCompat="@drawable/stars" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Jalan Metro Duta Kav. UE, RW.14, Pd. Pinang, Kec. Kby. Lama, Daerah Khusus Ibukota Jakarta 12310" />
-
-        <Button
-            android:id="@+id/buttonRSPI"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="See more"
-            android:backgroundTint="@color/light_blue_500"/>
     </LinearLayout>
-
-</LinearLayout>
-
     <LinearLayout
-        android:id="@+id/rumahsakit3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="548dp"
-        android:background="@color/cyan_500"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="126dp"
-            android:layout_height="150dp"
-            android:background="#FFFFFF"
-            android:scaleType="fitXY"
-
-            android:src="@drawable/logo"
-            app:srcCompat="@drawable/premier" />
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RS Premier Jatinegara"
-                android:textStyle="bold"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="126dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rspi"
 
                 />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3,7" />
+                    android:text="RS Pondok Indah (RSPI)"
+                    android:textStyle="bold"
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/stars"/>.
+                    />
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4,7 "
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/stars"></androidx.appcompat.widget.AppCompatImageView>
+                </LinearLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Metro Duta Kav. UE Pondok Indah - Kebayoran Lama, Jakarta Selatan, Jakarta, Indonesia 12310   " />
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jl. Jatinegara Timur No.85-87, RT.10/RW.2, Bali Mester, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13310" />
-
-            <Button
-                android:id="@+id/buttonPremier"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="see more"
-                android:backgroundTint="@color/light_blue_500"/>
         </LinearLayout>
-
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="126dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/premier"
 
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RS Jatinegara Premiere"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3,8 "
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/stars"></androidx.appcompat.widget.AppCompatImageView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Jatinegara Timur No.85-87, RT.10/RW.2, Bali Mester, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13310" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
